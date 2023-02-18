@@ -5,3 +5,8 @@ const part3 = [" because you are strong!", " because you are unstoppable!", " be
 const randomNumber = arr =>{
     return Math.floor(Math.random() * arr.length)
 };
+const motivationalSpeech = () => {
+    console.log(`${part1[randomNumber(part1)]}${part2[randomNumber(part2)]}${part3[randomNumber(part3)]}`);
+};
+
+console.log(motivationalSpeech())
